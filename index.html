@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="lSketch">
+    <title>lSketch</title>
+    <!-- Include css files. -->
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/fa.min.css">
+</head>
+
+<body>
+    <div class="container w-full mx-auto max-w-8/12 md:px-4 mb-2">
+        <!-- Header. -->
+        <center>
+            <h1 class="font-bold display-1 underline">
+                lSketch
+            </h1>
+            <h4 class="text-subtitle mb-6">Want to draw something creative. Just pick a color and draw, it is as easy as
+                that.</h4>
+        </center>
+    </div>
+    <div class="card mb-2 max-w-8 cursor-pointer p-2 mx-auto text-center border-3 border-transparent hover:border-primary" onclick="javascript: showConfig();">
+        <i class="fad fa-fill-drip fa-2x text-primary"></i>
+    </div>
+    <center>
+        <!-- Canvas.  -->
+        <canvas id="myCanvas" height="600" width="700" class="hide-on-md shadow-xl mb-2"></canvas>
+    </center>
+    <div class="flex flex-wrap mx-auto justify-between max-w-sm mb-3">
+        <button onclick="javascript: clearCanvas();">Clear Canvas</button>
+        <button onclick="javascript: downloadImage(this);">Download</button>
+    </div>
+    <!-- Footer. -->
+    <div class="mb-2 card text-center p-2 mx-auto max-w-xl">
+        <h4 class="text-subtitle"><a href="https://github.com/lovesaroha/lSketch" target="_blank">LoveSaroha/lSketch</a>
+        </h4>
+        <h3 class="text-subtitle font-bold mb-0 hover:underline cursor-pointer"
+            onclick="javascript: window.location = 'https://lovesaroha.com';">Love Saroha</h3>
+        <h4 class="text-gray">lovesaroha1994@gmail.com</h4>
+    </div>
+    <!-- Modal element. -->
+    <div class="fixed z-50 inset-0 overflow-y-auto" onclick="javascript: closeModalBackground(event);"
+        style="display: none;" id="modal_id" aria-labelledby="modal-title" role="dialog" aria-modal="true"></div>
+    <!-- Include script.js file -->
+    <script type="text/javascript" src="./assets/script.js"></script>
+</body>
+
+</html>
